@@ -56,7 +56,7 @@ esp_err_t at_wifi_init(void)
         return ret;
     }
     //Station模式  最小值3秒
-    esp_wifi set inactive time(WIFI_IF_STA, 3);  
+    esp_wifi_set_inactive_time(WIFI_IF_STA, 3);  
     return esp_wifi_start();
 }
 
