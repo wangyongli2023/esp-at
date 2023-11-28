@@ -29,7 +29,7 @@ jobs:
       run: |
         # set module information
         mkdir build
-        echo -e "{\"platform\": \"PLATFORM_ESP32C2\", \"module\": \"${{ inputs.module_name }}\", \"silence\": 0}" > build/module_info.json
+        echo -e "{\"platform\": \"PLATFORM_ESP32C2\", \"module\": \"${{ inputs.module_name }}\", \"silence\": 1}" > build/module_info.json
 
         # update esp32c2 ota token
         cd components/at/private_include
